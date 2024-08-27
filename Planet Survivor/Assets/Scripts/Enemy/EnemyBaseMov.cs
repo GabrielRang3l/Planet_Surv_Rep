@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyBaseMov : MonoBehaviour
 {
     Transform Player;
-    [Header("Base Move")]
+    [Header("Velocidade do Inimigo")]
 
     public float moveSpeed;
 
@@ -16,7 +16,6 @@ public class EnemyBaseMov : MonoBehaviour
 
     void Update()
     {
-        transform.position = Vector2.MoveTowards(transform.position, Player.transform.position, moveSpeed
-            * Time.deltaTime);
+        transform.position = Vector2.MoveTowards(transform.position, Player.transform.position, moveSpeed * Time.deltaTime);
     }
 }

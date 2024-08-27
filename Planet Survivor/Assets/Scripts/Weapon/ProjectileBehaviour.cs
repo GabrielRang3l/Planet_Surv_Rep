@@ -14,7 +14,8 @@ public class ProjectileBehaviour : ProjectileWaponBehaviour
     
     void Update()
     {
-        transform.position += direction * pb.speed * Time.deltaTime; // Aplicando o movimento para o projetio 
+        // Aplicando o movimento para o projetil
+        transform.position += direction * pb.speed * Time.deltaTime; 
 
     }
 }

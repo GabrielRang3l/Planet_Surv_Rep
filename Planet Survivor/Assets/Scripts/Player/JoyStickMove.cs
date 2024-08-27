@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class JoyStickMove : MonoBehaviour
 {
-
-    public Joystick movementJoystick;
-    public float playerSpeed;
     private Rigidbody2D rb;
+
+
+    [Header("Inserir o Script _FloatingJoystick")] public Joystick movementJoystick;
+    [Header("Altera a velocidade do jogador")] public float playerSpeed;
+
 
     [HideInInspector]
     public Vector2 lastMovedVector; // Vetor que guarda ultima posição 
    
-
 
     private void Start()
     {
