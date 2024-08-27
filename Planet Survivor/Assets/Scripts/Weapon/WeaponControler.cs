@@ -11,22 +11,25 @@ public class WeaponControler : MonoBehaviour
     public float cooldownDuration;
     float currentCooldown;
     public int pierce;
-    void Start()
+
+    protected JoyStickMove jsm;
+    protected virtual void Start()
     {
+        jsm = FindObjectOfType<JoyStickMove>();
         currentCooldown = cooldownDuration;
     }
 
 
-    void Update()
+    protected virtual void Update()
     {
         currentCooldown -= Time.deltaTime;
-        if (currentCooldown <= 0f)
+        if (currentCooldown <= 0f)     // Se cooldown for 0, attack
         {
             Attack();
         }
     }
 
-    void Attack()
+    protected virtual void Attack()
     {
         currentCooldown = cooldownDuration;
     }
