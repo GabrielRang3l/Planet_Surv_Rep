@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class WeaponControler : MonoBehaviour
 {
+    /*
     [Header("Weapon Stats")]
     public GameObject prefab;
     public float speed;
@@ -32,5 +33,5 @@ public class WeaponControler : MonoBehaviour
     protected virtual void Attack()
     {
         currentCooldown = cooldownDuration;
-    }
+    }*/
 }

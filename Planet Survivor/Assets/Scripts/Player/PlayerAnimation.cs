@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerAnimation : MonoBehaviour
 {
+
+    /*
     Animator am;
     JoyStickMove jsm;
     SpriteRenderer sr;
@@ -38,5 +40,5 @@ public class PlayerAnimation : MonoBehaviour
         {
             sr.flipX = false;
         }
-    }
+    }*/
 }

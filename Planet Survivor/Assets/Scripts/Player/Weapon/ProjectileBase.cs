@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ProjectileBase : WeaponControler
 { 
-
+    /*
      protected override void Start()
     {
         base.Start();
@@ -15,9 +15,9 @@ public class ProjectileBase : WeaponControler
     {
         base.Attack ();
         GameObject spawnedProjectile = Instantiate(prefab);
-        spawnedProjectile.transform.position = transform.position; //Tornando a mesma possição do objeto base, que será o player      
+        spawnedProjectile.transform.position = transform.position; //Tornando a mesma posição do objeto base, que será o player      
         spawnedProjectile.GetComponent<ProjectileBehaviour>().DirectionChecker(jsm.lastMovedVector); // Referenciando e definindo direção
-         
-                                                                                                              
-    }
+
+
+    }*/
 }

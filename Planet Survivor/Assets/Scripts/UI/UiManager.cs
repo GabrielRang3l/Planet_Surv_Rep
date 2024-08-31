@@ -9,6 +9,7 @@ public class UiManager : MonoBehaviour
     [Header("Pede o componente Canvas")]
     [SerializeField] Canvas mainCanvas;
     [SerializeField] Canvas popUpCanvas;
+  
 
     [Header("Pede o componente Button")]
     [SerializeField] Button btnConfig;
@@ -26,6 +27,7 @@ public class UiManager : MonoBehaviour
     {
         //Esconde o Submenu ao iniciar
         popUpCanvas.enabled = false;
+       
 
         //Componente do botão PopUpCanvas
         bConfig = btnConfig.GetComponent<Button>();
@@ -45,6 +47,7 @@ public class UiManager : MonoBehaviour
         Time.timeScale = 1;
         popUpCanvas.enabled = false;
         bConfig.interactable = true;
+       
     }
 
     private void ShowPopUpCanvas()
@@ -54,6 +57,7 @@ public class UiManager : MonoBehaviour
 
         popUpCanvas.enabled = true;
         bConfig.interactable = false;
+   
     }
 
     private void Update()

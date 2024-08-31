@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-
+/*
 /// <summary>
 /// Script base para todos os projeteis do jogo 
 /// </summary>
@@ -30,7 +30,7 @@ public class ProjectileWeaponBehaviour : MonoBehaviour
             Destroy(collision.gameObject);
             Destroy(gameObject);
         }
-    }
-}
+    }*/
+
 
 

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.VFX;
 
+/*
 public class ProjectileBehaviour : ProjectileWeaponBehaviour
 {
     ProjectileBase pb;
@@ -34,4 +35,4 @@ public class ProjectileBehaviour : ProjectileWeaponBehaviour
         transform.position += direction * pb.speed * Time.deltaTime; 
 
     }
-}
+}*/
