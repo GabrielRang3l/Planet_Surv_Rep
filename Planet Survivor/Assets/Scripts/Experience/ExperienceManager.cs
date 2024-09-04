@@ -33,6 +33,7 @@ public class ExperienceManager : MonoBehaviour
 
     void Update()
     {
+        // inserir o pickup do item aqui pra subir de nivel
         if (Input.GetMouseButtonDown(0))
         {
             AddExperience(5);
@@ -68,12 +69,18 @@ public class ExperienceManager : MonoBehaviour
 
     void UpdateInterface()
     {
+
+        /*
         int start = totalExperience - previousLevelExperience;
         int end = nextLevelExperience - previousLevelExperience;
 
         levelText.text = currentLevel.ToString();
         experienceText.text = start + " exp / " + end + " exp";
         experienceFill.fillAmount = (float)start / (float)end;
+
+        print("ta funcionando");
+        */
     }
+
 
 }
