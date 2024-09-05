@@ -20,7 +20,7 @@ public class ProjectileWeaponBehaviour : MonoBehaviour
     {
         direction = dir;
 
-        /*
+        
         float dirx = direction.x;
         float diry = direction.y;
 
@@ -35,7 +35,7 @@ public class ProjectileWeaponBehaviour : MonoBehaviour
 
         transform.localScale = scale;
         transform.rotation = Quaternion.Euler(rotation);
-        */
+        
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

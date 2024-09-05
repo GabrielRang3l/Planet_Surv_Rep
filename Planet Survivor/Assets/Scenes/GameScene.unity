@@ -1431,11 +1431,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8170153791668043268, guid: 0d230cc8be529a542a08cb878ab14b18, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 960
+      value: 978.87
       objectReference: {fileID: 0}
     - target: {fileID: 8170153791668043268, guid: 0d230cc8be529a542a08cb878ab14b18, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 645
+      value: 973.8
       objectReference: {fileID: 0}
     - target: {fileID: 8170153791668043268, guid: 0d230cc8be529a542a08cb878ab14b18, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1808,10 +1808,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   joystick: {fileID: 538187462}
   playerSpeed: 1.5
-  movementVector: {x: 0, y: 0, z: 0}
-  lastVerticalVector: 0
-  lastHorizontalVector: 0
-  lastDirection: {x: 0, y: 0}
+  lastVector: {x: 0, y: 0}
 --- !u!1 &1121733973
 GameObject:
   m_ObjectHideFlags: 0
@@ -2113,7 +2110,6 @@ GameObject:
   - component: {fileID: 1232593677}
   - component: {fileID: 1232593679}
   - component: {fileID: 1232593678}
-  - component: {fileID: 1232593680}
   m_Layer: 0
   m_Name: wpn_Gun
   m_TagString: Untagged
@@ -2149,9 +2145,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 4485605910009610747, guid: d2c805f0d52bc0e4b9659f02c73edec4, type: 3}
-  speed: 1
-  damage: 1
-  cooldownDuration: 1
+  speed: 10
+  damage: 0
+  cooldownDuration: 2
   pierce: 0
 --- !u!212 &1232593679
 SpriteRenderer:
@@ -2205,23 +2201,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1232593680
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1232593676}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93234b7034657294f9ee2d7fb7702d6c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefab: {fileID: 0}
-  speed: 0
-  damage: 0
-  cooldownDuration: 0
-  pierce: 0
 --- !u!1 &1271874929
 GameObject:
   m_ObjectHideFlags: 0

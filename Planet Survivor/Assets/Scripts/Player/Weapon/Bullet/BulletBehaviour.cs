@@ -7,7 +7,7 @@ using UnityEngine.VFX;
 public class BulletBehaviour : ProjectileWeaponBehaviour
 {
 
-    BulletController pc;
+    BulletController bc;
     AudioSource au;
 
     [Header("Configurações de Som")]
@@ -16,6 +16,8 @@ public class BulletBehaviour : ProjectileWeaponBehaviour
     
     protected override void Start() 
     {
+        base.Start();
+        bc = FindObjectOfType<BulletController>();
         if (GameObject.Find("SFXManager").GetComponent<SFXManager>().PlaySFX)  //TOCA O SOM DO TIRO
 
         {
@@ -25,15 +27,15 @@ public class BulletBehaviour : ProjectileWeaponBehaviour
             au.Play();
         }
 
-        base.Start();
-        pc = FindObjectOfType<BulletController>();
+        
+        
     }
 
     
     void Update()
     {
         // Aplicando o movimento para o projetil
-        transform.position += direction * pc.speed * Time.deltaTime; 
+        transform.position += direction * bc.speed * Time.deltaTime; 
 
     }
 }

@@ -16,7 +16,7 @@ public class BulletController : WeaponControler
         base.Attack ();
         GameObject spawnedBullet = Instantiate(prefab);
         spawnedBullet.transform.position = transform.position;     
-       // spawnedBullet.GetComponent<BulletBehaviour>().DirectionChecker(tjs.lastDirection); 
+        spawnedBullet.GetComponent<BulletBehaviour>().DirectionChecker(tjs.lastVector); 
 
 
     }

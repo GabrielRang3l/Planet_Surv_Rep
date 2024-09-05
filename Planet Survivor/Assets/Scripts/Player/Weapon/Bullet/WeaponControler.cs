@@ -17,7 +17,7 @@ public class WeaponControler : MonoBehaviour
     protected virtual void Start()
     {
         tjs = FindObjectOfType<TrumpJoystick>();
-        currentCooldown = cooldownDuration;
+        currentCooldown = cooldownDuration; // Faz o tiro não ser atirado assim que o jogo começa 
     }
 
 

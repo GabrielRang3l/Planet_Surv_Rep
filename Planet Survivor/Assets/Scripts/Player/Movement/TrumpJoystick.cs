@@ -5,74 +5,37 @@ using UnityEngine;
 public class TrumpJoystick : MonoBehaviour
 {
     public Joystick joystick;
-
-    [SerializeField] float playerSpeed;
-
     Rigidbody2D rb;
-
+    public float playerSpeed;
     [HideInInspector]
-    public Vector3 movementVector;
-    [HideInInspector]
-    public float lastVerticalVector;
-    [HideInInspector]
-    public float lastHorizontalVector;
+    public Vector2 lastVector;
+  
+    
 
-    public Vector2 lastDirection;
-
-
-
-    void Awake()
+    void Start ()
     {
         rb = GetComponent<Rigidbody2D>();
-        movementVector = new Vector3();
-        lastDirection = new Vector2(1f, 0f);
+        lastVector = new Vector2(1,0f);
+        
+        
     }
 
 
-    void Update() //toma conta da movimentação do player usando o scrip "JOYSTICK"
+    void FixedUpdate() 
     {
-        
-        movementVector *= playerSpeed;
-        rb.velocity = movementVector;
-        
-        if (movementVector.x != 0)
-        {
-            lastHorizontalVector = movementVector.x;
-        }
-        if (movementVector.y != 0)
-        {
-            lastVerticalVector = movementVector.y;
-        }
-
-
-
-        if (joystick.Direction.y !=0)
+        if(joystick.Direction.y != 0 || joystick.Direction.x != 0)
         {
             rb.velocity = new Vector2(joystick.Direction.x * playerSpeed, joystick.Direction.y * playerSpeed);
-
-            lastDirection = new Vector2(lastHorizontalVector, lastVerticalVector);
-
-            /* if (joystick.Direction.x != 0)
-             {
-                 lastHorizontalVector = movementVector.x;
-             }
-             if (joystick.Direction.x != 0)
-             {
-                 lastVerticalVector = movementVector.y;
-             }*/
-
-       
+            lastVector = new Vector2(joystick.Direction.x, joystick.Direction.y);
         }
         else
         {
             rb.velocity = Vector2.zero;
         }
+    }   
+
+    
 
 
-        if (joystick.Direction.x != 0 && joystick.Direction.y != 0)
-        {
-            lastDirection = new Vector2(lastHorizontalVector, lastVerticalVector);
-        }
-
-    }
+    
 }
