@@ -8,6 +8,8 @@ public class TrumpAnimation : MonoBehaviour
     Animator am;
     TrumpJoystick tjs; // esse é o scrip de movimento do trump
     SpriteRenderer sr;
+
+
     void Start()
     {
         am = GetComponent<Animator>();

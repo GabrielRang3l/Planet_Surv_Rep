@@ -12,14 +12,16 @@ public class TrumpStats : MonoBehaviour
 
 
     // Start is called before the first frame update
-    void Start()
+    public void TakeDamage(int damage)
     {
-        
+        currentHp -= damage;
+
+        if (currentHp <= 0)
+        {
+            Debug.Log("morreu");
+        }
+
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
 }
