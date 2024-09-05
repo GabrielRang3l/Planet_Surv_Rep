@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 539c2c13f57911f4591a2a54920fadd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destroyAfterSeconds: 3
+  destroyAfterSeconds: 2
   clips:
   - {fileID: 8300000, guid: 539608055eb968147ade8d7e85f34e09, type: 3}
   - {fileID: 8300000, guid: 967b542bc6649e94183321302bfbbeb6, type: 3}

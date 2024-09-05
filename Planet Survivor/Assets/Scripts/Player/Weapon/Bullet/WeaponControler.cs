@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class WeaponControler : MonoBehaviour
 {
-    /*
+    
     [Header("Weapon Stats")]
     public GameObject prefab;
     public float speed;
@@ -13,10 +13,10 @@ public class WeaponControler : MonoBehaviour
     float currentCooldown;
     public int pierce;
 
-    protected JoyStickMove jsm;
+    protected TrumpJoystick tjs;
     protected virtual void Start()
     {
-        jsm = FindObjectOfType<JoyStickMove>();
+        tjs = FindObjectOfType<TrumpJoystick>();
         currentCooldown = cooldownDuration;
     }
 
@@ -33,5 +33,5 @@ public class WeaponControler : MonoBehaviour
     protected virtual void Attack()
     {
         currentCooldown = cooldownDuration;
-    }*/
+    }
 }

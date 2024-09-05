@@ -5,34 +5,39 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-
-}
-
-    /*
-
-    Transform Player;
+    
     [Header("Movimento do Inimigo")]
-    public float moveSpeed;
+    [SerializeField] float speed;       //da a velocidade do inimigo
+
+    [Header("Alvo do inimigo")]
+    [SerializeField] Transform Target;  //pede o transform do alvo
+
+    GameObject targetGameObject;        // serve pro inimigo identificar se está colidindo com o player ou outra coisa
     Rigidbody2D rb;
 
-    GameObject TargetGameObject; // serve pro inimigo identificar se está colidindo com o player ou outra coisa
+    [SerializeField] int hp = 10;
 
-    void Start()
+    
+
+
+    private void Awake()
     {
-        Player = FindAnyObjectByType<JoyStickMove>().transform;
         rb = GetComponent<Rigidbody2D>();
+        targetGameObject = Target.gameObject;
+        //Target = FindAnyObjectByType<TrumpJoystick>().transform;
+        
     }
 
     void FixedUpdate()
     {
-        Vector3 direction = (Player.position - transform.position).normalized;
-        rb.velocity = direction * moveSpeed;
+        Vector3 direction = (Target.position - transform.position).normalized;
+        rb.velocity = direction * speed;
 
 
     }
     private void OnCollisionStay2D(Collision2D collision)
     {
-        if (collision.gameObject == TargetGameObject)
+        if (collision.gameObject == targetGameObject)
         {
             Attack();
         }
@@ -42,8 +47,26 @@ public class Enemy : MonoBehaviour
     {
         
     }
+
+    public void TakeDamage(int damage)
+    {
+        hp -= damage;
+        
+        if (hp < 1)
+        {
+            Destroy(gameObject);
+        }
+
+    }
+
+
+
+
 }
-    */
+
+
+
+    
 
 
 /*  
