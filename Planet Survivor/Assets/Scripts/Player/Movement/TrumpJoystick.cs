@@ -26,7 +26,7 @@ public class TrumpJoystick : MonoBehaviour
         if(joystick.Direction.y != 0 || joystick.Direction.x != 0)
         {
             rb.velocity = new Vector2(joystick.Direction.x * playerSpeed, joystick.Direction.y * playerSpeed);
-            lastVector = new Vector2(joystick.Direction.x, joystick.Direction.y);
+            lastVector = new Vector2(joystick.Direction.x , joystick.Direction.y);
         }
         else
         {
