@@ -32,6 +32,19 @@ public class EnemyStats : MonoBehaviour
 
     public void Kill()
     {
-        Destroy(gameObject);
+        Destroy(gameObject);   
     }
+
+
+    private void OnCollisionStay2D(Collision2D col)
+    {
+        if (col.gameObject.CompareTag("Player"))
+        {
+            TrumpStats player = col.gameObject.GetComponent<TrumpStats>();
+            player.TakeDamage(currentDamage); //se for usar multiplicador de dano usa currentDamage, se nao usa weaponData.damage
+        }
+    }
+
+
+
 }
