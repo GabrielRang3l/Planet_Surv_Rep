@@ -98,6 +98,7 @@ GameObject:
   - component: {fileID: 2853730538263143074}
   - component: {fileID: -7031561893571942983}
   - component: {fileID: 689913504655547052}
+  - component: {fileID: -1077213090293683483}
   m_Layer: 0
   m_Name: EnemyCreper1
   m_TagString: Enemy
@@ -115,7 +116,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.424, y: -0.127, z: -40.27998}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8689574393779565213}
@@ -159,10 +160,10 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 989468343
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: a6f5a2b5c8ae9264eb87beb6dbde08eb, type: 3}
+  m_SortingLayerID: -47663845
+  m_SortingLayer: 4
+  m_SortingOrder: 1
+  m_Sprite: {fileID: -706911576, guid: 41887b19bc959a345a236ca0f269eca8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -209,7 +210,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.3, y: 1.45}
+    oldSize: {x: 0.96875, y: 0.6875}
     newSize: {x: 2.3, y: 1.45}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -260,4 +261,34 @@ MonoBehaviour:
   drops:
   - name: Exp
     itemPrefab: {fileID: 8029562051326559679, guid: df677752f24605246b19d737267f5c49, type: 3}
-    dropRate: 50
+    dropRate: 80
+  - name: Health
+    itemPrefab: {fileID: 8029562051326559679, guid: df677752f24605246b19d737267f5c49, type: 3}
+    dropRate: 60
+--- !u!50 &-1077213090293683483
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8958344169643187275}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4

@@ -46,6 +46,9 @@ TagManager:
   - name: Background
     uniqueID: 3626674039
     locked: 0
+  - name: PickUps
+    uniqueID: 2477295397
+    locked: 0
   - name: Prop
     uniqueID: 1668686531
     locked: 0
