@@ -10,11 +10,21 @@ public class TrumpStats : MonoBehaviour
 
 
     //current stats
-    float currentHealth;
-    float currentRecovery;
-    float currentMoveSpeed;
-    float currentMight;
-    float currentProjectileSpeed;
+    [HideInInspector]
+    public float currentHealth;
+    [HideInInspector]
+    public float currentRecovery;
+    [HideInInspector]
+    public float currentMoveSpeed;
+    [HideInInspector]
+    public float currentMight;
+    [HideInInspector]
+    public float currentProjectileSpeed;
+    [HideInInspector]
+    public float currentMagnet;
+
+
+
 
 
     //exp do jogador
@@ -53,7 +63,8 @@ public class TrumpStats : MonoBehaviour
         currentMoveSpeed = playerData.MoveSpeed;
         currentMight = playerData.Might;
         currentProjectileSpeed = playerData.ProjectileSpeed;
-    }
+        currentMagnet = playerData.Magnet;
+}
 
 
     void Start()
@@ -75,6 +86,8 @@ public class TrumpStats : MonoBehaviour
         {
             isInvincible = false;
         }
+
+        Recovery();
 
     }
 
@@ -131,5 +144,40 @@ public class TrumpStats : MonoBehaviour
     {
         Debug.Log("morreu");
     }
+
+
+    public void RestoreHealth(float amount)
+    {
+        //só cura se estiver abaixo da vida maxima 
+        if(currentHealth < playerData.MaxHealth)
+        {
+            currentHealth += amount;
+        }
+            
+            //garante que a vida do jogador nao passe da vida maxima 
+            if(currentHealth > playerData.MaxHealth)
+            {
+            currentHealth = playerData.MaxHealth;
+            }
+        
+    }
+
+    void Recovery()
+    {
+        if(currentHealth < playerData.MaxHealth)
+        {
+            currentHealth += currentRecovery * Time.deltaTime;
+
+            //garante que a vida nao ultrapasse o limite
+            if (currentHealth > playerData.MaxHealth)
+            {
+                currentHealth = playerData.MaxHealth;
+            }
+
+        }
+        
+    }
+
+
 
 }

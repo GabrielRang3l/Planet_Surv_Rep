@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ExpGem : MonoBehaviour, ICollectible
+public class ExpGem : Pickup, ICollectible
 {
     public int experienceGranted;
 
@@ -11,7 +11,7 @@ public class ExpGem : MonoBehaviour, ICollectible
     {
         TrumpStats player = FindAnyObjectByType<TrumpStats>();
         player.IncreaseExperience(experienceGranted);
-        Destroy(gameObject);
+      
     }
 
 }

@@ -5,24 +5,22 @@ using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
 {
-    public EnemyScriptableObjects enemyData;
 
     [Header("Alvo do inimigo")]
     [SerializeField] Transform Player;  //pede o transform do alvo
-
+    EnemyStats enemy;
     //Rigidbody2D rb;
 
 
      void Start()
     {
-        Player = FindAnyObjectByType<TrumpJoystick>().transform;
-        //rb = GetComponent<Rigidbody2D>();
-        
+        enemy = GetComponent<EnemyStats>();
+        Player = FindAnyObjectByType<TrumpJoystick>().transform;      
     }
 
     void Update()
     {
-        transform.position = Vector2.MoveTowards(transform.position, Player.transform.position, enemyData.MoveSpeed * Time.deltaTime);
+        transform.position = Vector2.MoveTowards(transform.position, Player.transform.position, enemy.currentMoveSpeed * Time.deltaTime);
 
     }
     private void OnCollisionStay2D(Collision2D collision)

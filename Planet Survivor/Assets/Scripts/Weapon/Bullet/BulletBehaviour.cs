@@ -30,7 +30,7 @@ public class BulletBehaviour : WeaponProjectileBehaviour
     void Update()
     {
         // Aplicando o movimento para o projetil
-        transform.position += direction * weaponData.Speed * Time.deltaTime; 
+        transform.position += direction * currentSpeed * Time.deltaTime; 
 
     }
 }

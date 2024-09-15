@@ -12,11 +12,10 @@ public class WeaponProjectileBehaviour : MonoBehaviour
 
 
     //status atuais
-
     float currentDamage;
-    float currentSpeed;
+    public float currentSpeed;
     float currentCooldownDuration;
-    protected int currentePierce;
+    protected int currentPierce;
 
 
      void Awake()
@@ -24,7 +23,7 @@ public class WeaponProjectileBehaviour : MonoBehaviour
         currentDamage = weaponData.Damage;
         currentSpeed = weaponData.Speed;
         currentCooldownDuration = weaponData.CooldownDuration;
-        currentePierce = weaponData.Pierce;
+        currentPierce = weaponData.Pierce;
     }
 
     protected virtual void Start()
@@ -78,8 +77,8 @@ public class WeaponProjectileBehaviour : MonoBehaviour
 
     void ReducePierce() //destroy o projetil quando o pierce chegar a 0
     {
-        currentePierce--;
-        if(currentePierce <= 0)
+        currentPierce--;
+        if(currentPierce <= 0)
         {
             Destroy(gameObject);
         }

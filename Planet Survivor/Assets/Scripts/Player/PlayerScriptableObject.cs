@@ -31,17 +31,8 @@ public class PlayerScriptableObject : ScriptableObject
     float projectileSpeed;
     public float ProjectileSpeed { get => projectileSpeed; private set => projectileSpeed = value; }
 
+    [SerializeField]
+    float magnet;
+    public float Magnet { get => magnet; private set => magnet = value; }
 
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

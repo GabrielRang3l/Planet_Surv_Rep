@@ -181,12 +181,11 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8958344169643187275}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e360333f5042bd149aca30ee59854398, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyData: {fileID: 11400000, guid: b0bd636439772814a8c056cf6a722f48, type: 2}
   Player: {fileID: 0}
 --- !u!114 &-7031561893571942983
 MonoBehaviour:
@@ -201,6 +200,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyData: {fileID: 11400000, guid: b0bd636439772814a8c056cf6a722f48, type: 2}
+  currentMoveSpeed: 0
+  currentHealth: 0
+  currentDamage: 0
 --- !u!114 &689913504655547052
 MonoBehaviour:
   m_ObjectHideFlags: 0
