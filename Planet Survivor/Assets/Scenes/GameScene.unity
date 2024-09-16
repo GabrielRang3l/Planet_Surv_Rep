@@ -116641,7 +116641,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1722522581066934877, guid: 71659b737a7997548ba6fc67db142441, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2937233658670576068, guid: 71659b737a7997548ba6fc67db142441, type: 3}
       propertyPath: m_LocalPosition.x
@@ -116649,11 +116649,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2937233658670576068, guid: 71659b737a7997548ba6fc67db142441, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.0820591
+      value: -2.082059
       objectReference: {fileID: 0}
     - target: {fileID: 2937233658670576068, guid: 71659b737a7997548ba6fc67db142441, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.031102568
+      value: -0.03110257
       objectReference: {fileID: 0}
     - target: {fileID: 2937233658670576068, guid: 71659b737a7997548ba6fc67db142441, type: 3}
       propertyPath: m_LocalRotation.w
@@ -116702,7 +116702,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3011263621690520331, guid: cbf416b5ee84f1144ae4e4af6b8ad73e, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4143729318838697870, guid: cbf416b5ee84f1144ae4e4af6b8ad73e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -116760,6 +116760,14 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.02383649
       objectReference: {fileID: 0}
+    - target: {fileID: 9028978592110394695, guid: cbf416b5ee84f1144ae4e4af6b8ad73e, type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9028978592110394695, guid: cbf416b5ee84f1144ae4e4af6b8ad73e, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1668686531
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -116779,7 +116787,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2615624817770145560, guid: 391b3f2c15e4ffe4d9386faac0a4c444, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8351467543003243841, guid: 391b3f2c15e4ffe4d9386faac0a4c444, type: 3}
       propertyPath: m_LocalPosition.x
@@ -116787,11 +116795,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8351467543003243841, guid: 391b3f2c15e4ffe4d9386faac0a4c444, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.0820591
+      value: -2.082059
       objectReference: {fileID: 0}
     - target: {fileID: 8351467543003243841, guid: 391b3f2c15e4ffe4d9386faac0a4c444, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.031102568
+      value: -0.03110257
       objectReference: {fileID: 0}
     - target: {fileID: 8351467543003243841, guid: 391b3f2c15e4ffe4d9386faac0a4c444, type: 3}
       propertyPath: m_LocalRotation.w
