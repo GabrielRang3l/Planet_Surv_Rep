@@ -10,7 +10,7 @@ public class TrumpStats : MonoBehaviour
 
 
     //current stats
-    [HideInInspector]
+    
     public float currentHealth;
     [HideInInspector]
     public float currentRecovery;

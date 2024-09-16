@@ -80,7 +80,7 @@ public class EnemyStats : MonoBehaviour
     void ReturnEnemy()
     {
         EnemySpawner es = FindObjectOfType<EnemySpawner>();
-        //transform.position = player.position + es.relativeSpawnPoints[Random.Range(0, es.relativeSpawnPoints.Count)].position;
+        transform.position = player.position + es.relativeSpawnPoints[UnityEngine.Random.Range(0, es.relativeSpawnPoints.Count)].position;
     }
 
 

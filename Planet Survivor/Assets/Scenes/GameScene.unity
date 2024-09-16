@@ -380,9 +380,18 @@ MonoBehaviour:
     waveQuota: 0
     spawnCount: 0
     spawnInterval: 1
+  - waveName: Wave2
+    enemyGroups:
+    - enemyName: Creper Mordidinha
+      enemyCount: 5
+      spawnCount: 0
+      enemyPrefab: {fileID: 7793597112702202381, guid: 072d1f367298cba43a4f92a10d60e22b, type: 3}
+    waveQuota: 0
+    spawnCount: 0
+    spawnInterval: 1
   currentWaveCount: 0
   enemiesAlive: 0
-  maxEnemiesAllowed: 4
+  maxEnemiesAllowed: 10
   maxEnemiesReached: 0
   waveIntervals: 3
   relativeSpawnPoints:
@@ -1590,9 +1599,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 684930854}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.01, y: -1.5, z: 0}
-  m_LocalScale: {x: 0.05329595, y: 0.05329595, z: 0.03730717}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.441, z: 0}
+  m_LocalScale: {x: 0.063083, y: 0.063083, z: 0.063083}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1115295232}
@@ -2535,7 +2544,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -47663845
   m_SortingLayer: 4
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 267315970, guid: c39764767e3759b4db4c385b39c837e6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2878,7 +2887,7 @@ Transform:
   m_GameObject: {fileID: 1147952757}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.13739498, y: 0.09124593, z: 40.279976}
+  m_LocalPosition: {x: -0.137395, y: 0.09124593, z: 40.27998}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -116697,7 +116706,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4143729318838697870, guid: cbf416b5ee84f1144ae4e4af6b8ad73e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.5663655
+      value: -3.566365
       objectReference: {fileID: 0}
     - target: {fileID: 4143729318838697870, guid: cbf416b5ee84f1144ae4e4af6b8ad73e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -116705,7 +116714,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4143729318838697870, guid: cbf416b5ee84f1144ae4e4af6b8ad73e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.024799768
+      value: -0.02479977
       objectReference: {fileID: 0}
     - target: {fileID: 4143729318838697870, guid: cbf416b5ee84f1144ae4e4af6b8ad73e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -116734,6 +116743,22 @@ PrefabInstance:
     - target: {fileID: 4143729318838697870, guid: cbf416b5ee84f1144ae4e4af6b8ad73e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4632579677869506852, guid: cbf416b5ee84f1144ae4e4af6b8ad73e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0009632818
+      objectReference: {fileID: 0}
+    - target: {fileID: 4796137624240303890, guid: cbf416b5ee84f1144ae4e4af6b8ad73e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.03124261
+      objectReference: {fileID: 0}
+    - target: {fileID: 4796137624240303890, guid: cbf416b5ee84f1144ae4e4af6b8ad73e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.02383649
+      objectReference: {fileID: 0}
+    - target: {fileID: 5167723017536134274, guid: cbf416b5ee84f1144ae4e4af6b8ad73e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.02383649
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
