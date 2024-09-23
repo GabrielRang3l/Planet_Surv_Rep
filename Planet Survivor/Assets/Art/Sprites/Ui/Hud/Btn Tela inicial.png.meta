@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5aa709797066f754d896a49ecd7eb651
+guid: ba1a2e28b387c9c42bfff5a922cdb543
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -121,7 +121,49 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Btn Tela inicial_0
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 79
+        width: 92
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19ffd05e85984e14abcb8376734d64df
+      internalID: 515761416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Btn Tela inicial_1
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 32
+        width: 58
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4f9b7886c91dfb49bc56f93623a1ece
+      internalID: -840329346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +174,9 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Btn Tela inicial_0: 515761416
+      Btn Tela inicial_1: -840329346
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
