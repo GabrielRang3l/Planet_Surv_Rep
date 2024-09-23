@@ -9,6 +9,7 @@ public class Pickup : MonoBehaviour
     {
         if (col.CompareTag("Player")) // se chegar perto do jogador destroi o objeto
         {
+            
             Destroy(gameObject);
         }
     }
