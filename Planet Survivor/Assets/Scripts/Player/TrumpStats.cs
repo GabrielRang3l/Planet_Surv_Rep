@@ -23,6 +23,8 @@ public class TrumpStats : MonoBehaviour
     [HideInInspector]
     public float currentMagnet;
 
+    TrumpAnimation ta;
+
 
 
 
@@ -71,6 +73,7 @@ public class TrumpStats : MonoBehaviour
     {
         //inicializa o experienceCap como o primeiro capIncrease
         experienceCap = levelRanges[0].experineceCapIncrese;
+        ta = GetComponent<TrumpAnimation>();
 
     }
 
@@ -132,8 +135,9 @@ public class TrumpStats : MonoBehaviour
             invincibilityTimer = invincibilityDuration;
             isInvincible = true;
 
-            if (currentHealth <= 0)
+            if (currentHealth <= 1)
             {
+                ta.DeathAnimation();
                 Kill();
             }
         }
@@ -142,6 +146,7 @@ public class TrumpStats : MonoBehaviour
 
     public void Kill()
     {
+        
         Debug.Log("morreu");
     }
 

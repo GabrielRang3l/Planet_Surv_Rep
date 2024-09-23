@@ -8,6 +8,7 @@ public class TrumpAnimation : MonoBehaviour
     Animator am;
     TrumpJoystick tjs; // esse é o scrip de movimento do trump
     SpriteRenderer sr;
+    
 
 
     void Start()
@@ -15,6 +16,7 @@ public class TrumpAnimation : MonoBehaviour
         am = GetComponent<Animator>();
         tjs = GetComponent<TrumpJoystick>();
         sr = GetComponent<SpriteRenderer>();
+     
     }
 
    
@@ -41,5 +43,10 @@ public class TrumpAnimation : MonoBehaviour
         {
             sr.flipX = false;
         }
+    }
+
+    public void DeathAnimation()
+    {
+        am.SetBool("IsDeath", true );
     }
 }
