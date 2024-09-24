@@ -57,7 +57,7 @@ public class EnemyMovement : MonoBehaviour
     {
         if (Player.transform.position.x <= transform.position.x)
         {
-            enemytransform.transform.localScale = -1f;
+            //enemytransform.transform.localScale = 
         }
     }
 

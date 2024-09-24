@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.PlasticSCM.Editor.WebApi;
 using UnityEngine;
 
 public class AutoShots : MonoBehaviour
@@ -12,15 +11,12 @@ public class AutoShots : MonoBehaviour
 
     private float nextShootTime = 0f; // Timer for shooting
 
-
-
-
     void Update()
     {
         if (Time.time >= nextShootTime)
         {
             GameObject target = FindNearestEnemy();
-         
+
             if (target != null)
             {
                 Shoot(target);
@@ -48,12 +44,17 @@ public class AutoShots : MonoBehaviour
         return nearestEnemy;
     }
 
-
     void Shoot(GameObject target)
     {
-        GameObject bullet = Instantiate(bulletPrefab, transform.position, transform.rotation);
         Vector2 direction = (target.transform.position - transform.position).normalized;
+
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        Quaternion bulletRotation = Quaternion.Euler(0, 0, angle);
+        GameObject bullet = Instantiate(bulletPrefab, transform.position, bulletRotation);
         Rigidbody2D bulletRb = bullet.GetComponent<Rigidbody2D>();
-        bulletRb.velocity = direction * bulletSpeed ;
+        if (bulletRb != null)
+        {
+            bulletRb.velocity = direction * bulletSpeed;
+        }
     }
 }
