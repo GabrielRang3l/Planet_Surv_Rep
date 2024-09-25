@@ -68,7 +68,7 @@ public class WeaponProjectileBehaviour : MonoBehaviour
         if (col.CompareTag("Enemy"))
         {
             EnemyStats enemy = col.GetComponent<EnemyStats>();
-            enemy.TakeDamage(currentDamage);  //use "currentDamage" inves de "weaponData.Damage" se quiser usar multiplicador de dano no futuro
+            enemy.TakeDamage(currentDamage);  
             ReducePierce();
             Instantiate(enemyBulletVFX[Random.Range(0, enemyBulletVFX.Length - 1)], gameObject.transform.position, Quaternion.identity);
             

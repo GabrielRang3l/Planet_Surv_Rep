@@ -11,6 +11,7 @@ public class AutoShots : MonoBehaviour
 
     private float nextShootTime = 0f; // Timer for shooting
 
+
     void Update()
     {
         if (Time.time >= nextShootTime)
