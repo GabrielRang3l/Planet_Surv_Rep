@@ -98,6 +98,7 @@ GameObject:
   - component: {fileID: 6681444869908517134}
   - component: {fileID: 5422489732745883163}
   - component: {fileID: 5077325727678663495}
+  - component: {fileID: 7217025349821998629}
   m_Layer: 0
   m_Name: EnemyCreper4
   m_TagString: Enemy
@@ -274,3 +275,16 @@ PolygonCollider2D:
       - {x: 0.453125, y: -0.328125}
       - {x: 0.453125, y: 0.390625}
   m_UseDelaunayMesh: 0
+--- !u!114 &7217025349821998629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4504148888784890108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c4e06e9af54ebe429d3f3c51a3ea030, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
