@@ -100,6 +100,7 @@ GameObject:
   - component: {fileID: 5077325727678663495}
   - component: {fileID: 7217025349821998629}
   - component: {fileID: 306843949508001942}
+  - component: {fileID: 3866851861540930404}
   m_Layer: 0
   m_Name: EnemyCreper4
   m_TagString: Enemy
@@ -205,6 +206,10 @@ MonoBehaviour:
   currentHealth: 0
   currentDamage: 0
   despawnDistance: 10
+  damageColor: {r: 1, g: 1, b: 1, a: 1}
+  damageFlashDuration: 0.2
+  deathFadeTime: 0.6
+  damageEffect: {fileID: 0}
 --- !u!114 &5422489732745883163
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -301,9 +306,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76a3a4b9c499deb4dbd262aa539cc53f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectilePrefab: {fileID: 3125436630107077765, guid: 3be08584cfdb524479eb191352f47698, type: 3}
+  projectilePrefab: {fileID: 8850659200301044403, guid: 6abbb42a5cfcfb34ab1c02cedd2a169f, type: 3}
   shootingPoint: {fileID: 5595164566400612028}
   startShootingRange: 2
   bulletVelocity: 2.2
   colliderSize: 0.05
   shootingInterval: 2.5
+--- !u!50 &3866851861540930404
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4504148888784890108}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4

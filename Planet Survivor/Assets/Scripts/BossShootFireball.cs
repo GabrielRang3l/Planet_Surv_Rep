@@ -44,6 +44,7 @@ public class BossShootFireball : MonoBehaviour
         fireballHoming.SetTarget(player);
         fireballHoming.SetSpeed(fireballSpeed);
         fireballHoming.SetHomingStrength(1000f); // Set desired homing strength
+        
     }
 
     void FireCircularPattern()

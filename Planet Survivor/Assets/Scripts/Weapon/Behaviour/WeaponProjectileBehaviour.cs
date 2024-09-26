@@ -74,7 +74,7 @@ public class WeaponProjectileBehaviour : MonoBehaviour
         if (col.CompareTag("Enemy"))
         {
             EnemyStats enemy = col.GetComponent<EnemyStats>();
-            enemy.TakeDamage(GetCurrentDamage());  
+            enemy.TakeDamage(GetCurrentDamage(), transform.position);  
             ReducePierce();
             Instantiate(enemyBulletVFX[Random.Range(0, enemyBulletVFX.Length - 1)], gameObject.transform.position, Quaternion.identity);
             

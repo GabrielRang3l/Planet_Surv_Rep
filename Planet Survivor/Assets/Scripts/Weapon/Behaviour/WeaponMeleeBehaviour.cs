@@ -36,7 +36,7 @@ public class WeaponMeleeBehaviour : MonoBehaviour
         if (col.CompareTag("Enemy"))
         {
             EnemyStats enemy = col.GetComponent<EnemyStats>();
-            enemy.TakeDamage(currentDamage);  //use "currentDamage" inves de "weaponData.Damage" se quiser usar multiplicador de dano no futuro
+            enemy.TakeDamage(currentDamage, transform.position);  //use "currentDamage" inves de "weaponData.Damage" se quiser usar multiplicador de dano no futuro
           
         }
         else if (col.CompareTag("Prop"))

@@ -1,9 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+//using static UnityEngine.RuleTile.TilingRuleOutput;
 
 public class FireballHoming : MonoBehaviour
 {
+    public EnemyScriptableObjects enemyData;
+
     private Transform target;            // The player
     private float speed;                 // Speed of the fireball
     private float baseHomingStrength;    // Base homing strength (adjusted by distance)
@@ -11,6 +14,8 @@ public class FireballHoming : MonoBehaviour
     public float inaccuracyFactor = 1f;  // How much inaccuracy to add
     private bool isOnScreen = false;     // Check if the fireball has entered the screen
     private float screenLifeTimer;       // Timer to track life when on screen
+
+    public ParticleSystem damageEffect;
 
     void Start()
     {
@@ -88,9 +93,12 @@ public class FireballHoming : MonoBehaviour
     // Detect collision with the player
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (damageEffect) Instantiate(damageEffect, transform.position, Quaternion.identity); //GERA PARTICULAS QUANDO ATINGIDO
+
+        if (collision.gameObject.CompareTag("Player"))
         {
             Destroy(gameObject);  // Destroy the fireball on hit
         }
     }
 }
+

@@ -11,8 +11,9 @@ public class EnemyMovement : MonoBehaviour
     EnemyStats enemy;
     Transform enemytransform;
     SpriteRenderer sr;
-    
-    //Rigidbody2D rb;
+
+    Vector2 knockbackVelocity;
+    float knockbackDuration;
 
 
      void Start()
@@ -28,37 +29,34 @@ public class EnemyMovement : MonoBehaviour
         transform.position = Vector2.MoveTowards(transform.position, Player.transform.position, enemy.currentMoveSpeed * Time.deltaTime);
 
         
-    }
-    private void OnCollisionStay2D(Collision2D collision)
-    {
-       // if (collision.gameObject == targetGameObject)
+        if(knockbackDuration > 0 )
         {
-            Attack();
+            transform.position += (Vector3)knockbackVelocity * Time.deltaTime;
+            knockbackDuration -= Time.deltaTime;
         }
-    }
-
-    private void Attack()
-    {
-        
-    }
-
-    public void TakeDamage(int damage)
-    {
-        //hp -= damage;
-        
-        //if (hp < 1)
+        else
         {
-            Destroy(gameObject);
+            transform.position = Vector2.MoveTowards(transform.position, Player.transform.position, enemy.currentMoveSpeed * Time.deltaTime);
         }
 
     }
+   
 
-    private void FlipSprite()
+    public void Knockback(Vector2 velocity, float duration)
     {
-        if (Player.transform.position.x <= transform.position.x)
-        {
-            //enemytransform.transform.localScale = 
-        }
+        if (knockbackDuration > 0) return;
+
+
+        knockbackVelocity = velocity;
+        knockbackDuration = duration;   
     }
+
+ 
+
+
+
+
+
+
 
 }

@@ -22,6 +22,18 @@ public class EnemyStats : MonoBehaviour
     Transform player;
 
 
+    [Header("Damage Feedback")]
+    public Color damageColor = new Color(1,0,0,1);
+    public float damageFlashDuration = 0.2f;
+    public float deathFadeTime = 0.6f;
+    Color originalColor;
+    SpriteRenderer sr;
+    EnemyMovement movement;
+
+
+    public ParticleSystem damageEffect;
+
+
     void Awake()
     {
         currentMoveSpeed = enemyData.MoveSpeed;
@@ -33,6 +45,10 @@ public class EnemyStats : MonoBehaviour
     void Start()
     {
         player = FindAnyObjectByType<TrumpStats>().transform;
+        sr = GetComponent<SpriteRenderer>();
+        originalColor = sr.color;
+
+        movement = GetComponent<EnemyMovement>();
     }
 
 
@@ -45,9 +61,19 @@ public class EnemyStats : MonoBehaviour
     }
 
 
-    public void TakeDamage(float dmg)
+    public void TakeDamage(float dmg, Vector2 sourcePosition, float knockbackForce = 1f, float knockbackDuration = 0.2f)
     {
         currentHealth -= dmg;
+        StartCoroutine(DamageFlash());
+        
+
+        if (knockbackForce > 0)
+        {
+            Vector2 dir = (Vector2)transform.position - sourcePosition;
+            movement.Knockback(dir.normalized * knockbackForce, knockbackDuration);
+        }
+
+
 
         if (currentHealth <= 0)
         {
@@ -55,18 +81,31 @@ public class EnemyStats : MonoBehaviour
         }
     }
 
+    IEnumerator DamageFlash()
+    {
+        sr.color = damageColor;
+        yield return new WaitForSeconds(damageFlashDuration);
+        sr.color = originalColor;
+    }
+
+
+
     public void Kill()
     {
+       
         Destroy(gameObject);   
     }
 
 
     private void OnCollisionStay2D(Collision2D col)
     {
+        if (damageEffect) Instantiate(damageEffect, transform.position, Quaternion.identity); //GERA PARTICULAS QUANDO ATINGIDO
+
         if (col.gameObject.CompareTag("Player"))
         {
             TrumpStats player = col.gameObject.GetComponent<TrumpStats>();
             player.TakeDamage(currentDamage); //se for usar multiplicador de dano usa currentDamage, se nao usa weaponData.damage
+           
         }
     }
 
