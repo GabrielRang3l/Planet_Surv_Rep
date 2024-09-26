@@ -49,6 +49,10 @@ public class TrumpStats : MonoBehaviour
     bool isInvincible;
 
 
+    TrumpInventoryManager inventory;
+    public int weaponIndex;
+    public int passiveItemIndex;
+
 
 
     //toma conta do nivel
@@ -57,6 +61,8 @@ public class TrumpStats : MonoBehaviour
 
     void Awake()
     {
+        inventory = GetComponent<TrumpInventoryManager>();
+
         currentHealth = playerData.MaxHealth;
         currentRecovery = playerData.Recovery;
         currentMoveSpeed = playerData.MoveSpeed;

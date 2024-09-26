@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -22,5 +23,10 @@ public class PassiveItem : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public static implicit operator int(PassiveItem v)
+    {
+        throw new NotImplementedException();
     }
 }

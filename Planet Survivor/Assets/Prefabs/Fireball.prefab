@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7314401053654869580}
   m_Layer: 0
   m_Name: Fireball
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: -47663845
   m_SortingLayer: 4
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 242ab77cc882f4f4bb2243bc520df290, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 065587c66ea8e6f46aa02137dc177c4e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

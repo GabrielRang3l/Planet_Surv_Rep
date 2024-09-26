@@ -57,7 +57,6 @@ public class FireballHoming : MonoBehaviour
     private IEnumerator StartLifeTimer()
     {
         yield return new WaitForSeconds(screenLifeTimer);
-        Debug.Log("FIREBALL MISS");
         Destroy(gameObject);  // Fireball missed and is destroyed
     }
 
@@ -91,7 +90,6 @@ public class FireballHoming : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            Debug.Log("PLAYER HIT");
             Destroy(gameObject);  // Destroy the fireball on hit
         }
     }
