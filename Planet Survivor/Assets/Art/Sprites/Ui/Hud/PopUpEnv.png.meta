@@ -121,7 +121,217 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: PopUpEnv_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 140
+        width: 88
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97e97bc745fcb6e4891a64d13e6cb0d7
+      internalID: -1612841598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopUpEnv_1
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 235
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f35d974f661af543b3a1ee482035e9e
+      internalID: 1731428226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopUpEnv_2
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 198
+        width: 84
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f1819845a04f6a4fb73edbf88dd2343
+      internalID: 1828500829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopUpEnv_3
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 240
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78148a8c232b8974c9788812e0ab3389
+      internalID: 940624955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopUpEnv_4
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 180
+        width: 48
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c26ebf5bba37234d97cd21ce019f7af
+      internalID: 1115937289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopUpEnv_5
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 26
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d289a75fd8fb0f04ab0a797f7c8064f2
+      internalID: -185282895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopUpEnv_6
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 43
+        width: 35
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20b335ff9d4ae2441a51cf45da57b060
+      internalID: -633840221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopUpEnv_7
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 43
+        width: 35
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19a8288fd66050849817fada4a557278
+      internalID: -1246734079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopUpEnv_8
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 29
+        width: 35
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5adfde30e13db8843973e49e60721773
+      internalID: 270926694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopUpEnv_9
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 29
+        width: 35
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6e1db332be3b3541924797857812d78
+      internalID: -1620343895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +342,17 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      PopUpEnv_0: -1612841598
+      PopUpEnv_1: 1731428226
+      PopUpEnv_2: 1828500829
+      PopUpEnv_3: 940624955
+      PopUpEnv_4: 1115937289
+      PopUpEnv_5: -185282895
+      PopUpEnv_6: -633840221
+      PopUpEnv_7: -1246734079
+      PopUpEnv_8: 270926694
+      PopUpEnv_9: -1620343895
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

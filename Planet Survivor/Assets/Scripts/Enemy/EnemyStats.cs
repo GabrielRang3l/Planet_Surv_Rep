@@ -18,7 +18,7 @@ public class EnemyStats : MonoBehaviour
     [HideInInspector]
     public float currentDamage;
 
-    public float despawnDistance = 20f;
+    public float despawnDistance = 8f;
     Transform player;
 
 

@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c133e9952295eac4ca15a86d2d73fd35, type: 3}
   m_Name: Creper Mordidinha
   m_EditorClassIdentifier: 
-  moveSpeed: 0.7
-  maxHealth: 10
+  moveSpeed: 0.9
+  maxHealth: 15
   damage: 30
