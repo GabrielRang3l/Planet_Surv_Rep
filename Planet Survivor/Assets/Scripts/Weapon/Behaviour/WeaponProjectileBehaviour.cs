@@ -19,10 +19,9 @@ public class WeaponProjectileBehaviour : MonoBehaviour
 
 
     //status atuais
-    float currentDamage;
-    [HideInInspector]
-    public float currentSpeed;
-    float currentCooldownDuration;
+    protected float currentDamage;
+    protected float currentSpeed;
+    protected float currentCooldownDuration;
     protected int currentPierce;
 
 
@@ -33,6 +32,13 @@ public class WeaponProjectileBehaviour : MonoBehaviour
         currentCooldownDuration = weaponData.CooldownDuration;
         currentPierce = weaponData.Pierce;
     }
+
+
+    public float GetCurrentDamage()
+    {
+        return currentDamage *= FindObjectOfType<TrumpStats>().currentMight;
+    }
+
 
     protected virtual void Start()
     {
@@ -68,7 +74,7 @@ public class WeaponProjectileBehaviour : MonoBehaviour
         if (col.CompareTag("Enemy"))
         {
             EnemyStats enemy = col.GetComponent<EnemyStats>();
-            enemy.TakeDamage(currentDamage);  
+            enemy.TakeDamage(GetCurrentDamage());  
             ReducePierce();
             Instantiate(enemyBulletVFX[Random.Range(0, enemyBulletVFX.Length - 1)], gameObject.transform.position, Quaternion.identity);
             
@@ -77,7 +83,7 @@ public class WeaponProjectileBehaviour : MonoBehaviour
         {
             if(col.gameObject.TryGetComponent(out BreakableProps breakable))
             {
-                breakable.TakeDamage(currentDamage);
+                breakable.TakeDamage(GetCurrentDamage());
                 ReducePierce(); 
                 Instantiate(propBulletVFX, gameObject.transform.position, Quaternion.identity);
                 Destroy(propBulletVFX);

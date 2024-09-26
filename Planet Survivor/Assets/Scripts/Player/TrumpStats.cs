@@ -10,13 +10,13 @@ public class TrumpStats : MonoBehaviour
 
 
     //current stats
-    
+    [HideInInspector]
     public float currentHealth;
     [HideInInspector]
     public float currentRecovery;
     [HideInInspector]
     public float currentMoveSpeed;
-    [HideInInspector]
+  
     public float currentMight;
     [HideInInspector]
     public float currentProjectileSpeed;
@@ -24,9 +24,6 @@ public class TrumpStats : MonoBehaviour
     public float currentMagnet;
 
     TrumpAnimation ta;
-
-
-
 
 
     //exp do jogador

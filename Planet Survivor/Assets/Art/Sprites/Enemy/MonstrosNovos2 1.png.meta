@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 41887b19bc959a345a236ca0f269eca8
+guid: f77e5610fed2e0b40b99561a962e5df7
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -106,27 +106,14 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Windows Store Apps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MonstrosNovos2_0
+      name: MonstrosNovos2 1_0
       rect:
         serializedVersion: 2
-        x: 33
+        x: 3
         y: 96
         width: 92
         height: 32
@@ -137,17 +124,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a49a36826e4e914a85f5a8e32da2b4f
-      internalID: -1140553524
+      spriteID: 725677c6430ba0c41950fcc0b679b7b2
+      internalID: 1267957377
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MonstrosNovos2_1
+      name: MonstrosNovos2 1_1
       rect:
         serializedVersion: 2
-        x: 64
+        x: 0
         y: 64
         width: 64
         height: 31
@@ -158,59 +145,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 71a58844e408f63438783635d9a7bbf2
-      internalID: -554628953
+      spriteID: 48c8c2de7987c5443b3cf1b48d2d8bff
+      internalID: 1002678716
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MonstrosNovos2_2
+      name: MonstrosNovos2 1_2
       rect:
         serializedVersion: 2
-        x: 33
-        y: 33
-        width: 31
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 250113a3fa123db439d2df09208125e8
-      internalID: -706911576
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MonstrosNovos2_3
-      rect:
-        serializedVersion: 2
-        x: 70
-        y: 32
-        width: 24
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0ec6e5f573e0e3a40a5865d3f07a35eb
-      internalID: -1317794496
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MonstrosNovos2_4
-      rect:
-        serializedVersion: 2
-        x: 100
+        x: 1
         y: 32
         width: 27
         height: 22
@@ -221,41 +166,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 753d9acab734bd143a4b284134d2a977
-      internalID: -806250348
+      spriteID: 944256e7260fdc143b009cfa91bb865a
+      internalID: 1953589345
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MonstrosNovos2_5
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 1
-        width: 28
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0c4f809239eb2e649a141ac38f2c19e3
-      internalID: -424358274
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MonstrosNovos2_6
+      name: MonstrosNovos2 1_3
       rect:
         serializedVersion: 2
         x: 34
-        y: 3
-        width: 29
-        height: 25
+        y: 32
+        width: 24
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -263,20 +187,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 463b048cdb561364292373bd2f93da06
-      internalID: 2064449961
+      spriteID: ae90551d253820e43b2e2cead7ddb7b7
+      internalID: -952536934
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MonstrosNovos2_7
+      name: MonstrosNovos2 1_4
       rect:
         serializedVersion: 2
         x: 64
-        y: 0
+        y: 33
         width: 31
-        height: 31
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -284,17 +208,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d73a0ff238eb13b47911c4189e354793
-      internalID: 433073192
+      spriteID: 4e1318ebf12c0154da121c30ee4ff9c3
+      internalID: -548382124
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MonstrosNovos2_8
+      name: MonstrosNovos2 1_5
       rect:
         serializedVersion: 2
-        x: 97
+        x: 2
         y: 1
         width: 29
         height: 29
@@ -305,8 +229,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b1feab22a82d3dd4498261b22a12386e
-      internalID: 2032974243
+      spriteID: ee1537efb37047f4e8a6417a46d7c8d9
+      internalID: 1101267839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonstrosNovos2 1_6
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 0
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7187394c94eac8845bb7a51917f47c53
+      internalID: 1282935410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonstrosNovos2 1_7
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 3
+        width: 29
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81018f37ed8b4cd4ba477cc367be0360
+      internalID: 1699547063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonstrosNovos2 1_8
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 1
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3a26327c5b6d174897311e38b8de6d6
+      internalID: 745243214
       vertices: []
       indices: 
       edges: []
@@ -322,15 +309,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      MonstrosNovos2_0: -1140553524
-      MonstrosNovos2_1: -554628953
-      MonstrosNovos2_2: -706911576
-      MonstrosNovos2_3: -1317794496
-      MonstrosNovos2_4: -806250348
-      MonstrosNovos2_5: -424358274
-      MonstrosNovos2_6: 2064449961
-      MonstrosNovos2_7: 433073192
-      MonstrosNovos2_8: 2032974243
+      MonstrosNovos2 1_0: 1267957377
+      MonstrosNovos2 1_1: 1002678716
+      MonstrosNovos2 1_2: 1953589345
+      MonstrosNovos2 1_3: -952536934
+      MonstrosNovos2 1_4: -548382124
+      MonstrosNovos2 1_5: 1101267839
+      MonstrosNovos2 1_6: 1282935410
+      MonstrosNovos2 1_7: 1699547063
+      MonstrosNovos2 1_8: 745243214
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

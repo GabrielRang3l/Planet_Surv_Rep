@@ -163,7 +163,7 @@ SpriteRenderer:
   m_SortingLayerID: -47663845
   m_SortingLayer: 4
   m_SortingOrder: 1
-  m_Sprite: {fileID: -706911576, guid: 41887b19bc959a345a236ca0f269eca8, type: 3}
+  m_Sprite: {fileID: -548382124, guid: f77e5610fed2e0b40b99561a962e5df7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -203,7 +203,7 @@ MonoBehaviour:
   currentMoveSpeed: 0
   currentHealth: 0
   currentDamage: 0
-  despawnDistance: 20
+  despawnDistance: 10
 --- !u!114 &689913504655547052
 MonoBehaviour:
   m_ObjectHideFlags: 0
