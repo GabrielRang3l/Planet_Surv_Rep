@@ -30,10 +30,6 @@ public class EnemyStats : MonoBehaviour
     SpriteRenderer sr;
     EnemyMovement movement;
 
-
-    public ParticleSystem damageEffect;
-
-
     void Awake()
     {
         currentMoveSpeed = enemyData.MoveSpeed;
@@ -99,7 +95,6 @@ public class EnemyStats : MonoBehaviour
 
     private void OnCollisionStay2D(Collision2D col)
     {
-        if (damageEffect) Instantiate(damageEffect, transform.position, Quaternion.identity); //GERA PARTICULAS QUANDO ATINGIDO
 
         if (col.gameObject.CompareTag("Player"))
         {

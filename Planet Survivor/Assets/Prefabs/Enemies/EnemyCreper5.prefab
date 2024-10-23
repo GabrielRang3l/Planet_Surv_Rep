@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 8171617913157610093}
   - component: {fileID: 4452535724518975234}
   - component: {fileID: 6451563115681204932}
-  - component: {fileID: 6951355505697852895}
   - component: {fileID: 8611412570774319818}
   - component: {fileID: 4137932079953422915}
   - component: {fileID: 9086628500155254463}
+  - component: {fileID: 6766421930907038421}
   m_Layer: 0
   m_Name: EnemyCreper5
   m_TagString: Enemy
@@ -103,27 +103,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
---- !u!114 &6951355505697852895
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 162301358746973229}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76a0d06bff9399240b91c217679a03d0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyData: {fileID: 11400000, guid: 8515cf23a2ffb6e44bdbf5845089ad8a, type: 2}
-  currentMoveSpeed: 0
-  currentHealth: 0
-  currentDamage: 0
-  despawnDistance: 10
-  damageColor: {r: 1, g: 1, b: 1, a: 1}
-  damageFlashDuration: 0.2
-  deathFadeTime: 0.6
-  damageEffect: {fileID: 0}
 --- !u!114 &8611412570774319818
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -210,6 +189,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+--- !u!114 &6766421930907038421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 162301358746973229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76a0d06bff9399240b91c217679a03d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyData: {fileID: 11400000, guid: 8515cf23a2ffb6e44bdbf5845089ad8a, type: 2}
+  currentMoveSpeed: 0
+  currentHealth: 0
+  currentDamage: 0
+  despawnDistance: 8
+  damageColor: {r: 1, g: 0, b: 0, a: 1}
+  damageFlashDuration: 0.2
+  deathFadeTime: 0.6
 --- !u!1 &2072803275441490168
 GameObject:
   m_ObjectHideFlags: 0

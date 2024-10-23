@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Creper basico
   m_EditorClassIdentifier: 
   moveSpeed: 0.6
-  maxHealth: 5
+  maxHealth: 9
   damage: 40

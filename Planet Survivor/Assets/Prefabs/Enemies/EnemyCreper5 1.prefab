@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 8171617913157610093}
   - component: {fileID: 4452535724518975234}
   - component: {fileID: 6451563115681204932}
-  - component: {fileID: 6951355505697852895}
   - component: {fileID: 8611412570774319818}
   - component: {fileID: 9086628500155254463}
   - component: {fileID: -6857742385861102377}
+  - component: {fileID: -8601070406764491650}
   m_Layer: 0
   m_Name: EnemyCreper5 1
   m_TagString: Enemy
@@ -103,27 +103,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
---- !u!114 &6951355505697852895
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 162301358746973229}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76a0d06bff9399240b91c217679a03d0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyData: {fileID: 11400000, guid: 4372b71ffd559be41ab645696c39f638, type: 2}
-  currentMoveSpeed: 0
-  currentHealth: 0
-  currentDamage: 0
-  despawnDistance: 10
-  damageColor: {r: 1, g: 1, b: 1, a: 1}
-  damageFlashDuration: 0.2
-  deathFadeTime: 0.6
-  damageEffect: {fileID: 0}
 --- !u!114 &8611412570774319818
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -291,6 +270,26 @@ PolygonCollider2D:
       - {x: 0.39499998, y: -0.71999997}
       - {x: 0.405, y: -0.71999997}
   m_UseDelaunayMesh: 0
+--- !u!114 &-8601070406764491650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 162301358746973229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76a0d06bff9399240b91c217679a03d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyData: {fileID: 11400000, guid: 4372b71ffd559be41ab645696c39f638, type: 2}
+  currentMoveSpeed: 0
+  currentHealth: 0
+  currentDamage: 0
+  despawnDistance: 8
+  damageColor: {r: 1, g: 0, b: 0, a: 1}
+  damageFlashDuration: 0.2
+  deathFadeTime: 0.6
 --- !u!1 &2072803275441490168
 GameObject:
   m_ObjectHideFlags: 0

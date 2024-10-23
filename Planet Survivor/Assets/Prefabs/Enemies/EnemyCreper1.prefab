@@ -95,10 +95,10 @@ GameObject:
   - component: {fileID: 1113965277945610763}
   - component: {fileID: 4888770715611533156}
   - component: {fileID: 2853730538263143074}
-  - component: {fileID: -7031561893571942983}
   - component: {fileID: 689913504655547052}
   - component: {fileID: -3878497643552565012}
   - component: {fileID: -721610391857281807}
+  - component: {fileID: 6734060186623434140}
   m_Layer: 0
   m_Name: EnemyCreper1
   m_TagString: Enemy
@@ -187,27 +187,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
---- !u!114 &-7031561893571942983
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8958344169643187275}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76a0d06bff9399240b91c217679a03d0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyData: {fileID: 11400000, guid: 3680b2be24bdbd749a73a3d8a77b5a0b, type: 2}
-  currentMoveSpeed: 0
-  currentHealth: 0
-  currentDamage: 0
-  despawnDistance: 10
-  damageColor: {r: 1, g: 1, b: 1, a: 1}
-  damageFlashDuration: 0.2
-  deathFadeTime: 0.6
-  damageEffect: {fileID: 0}
 --- !u!114 &689913504655547052
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -292,3 +271,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+--- !u!114 &6734060186623434140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8958344169643187275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76a0d06bff9399240b91c217679a03d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyData: {fileID: 11400000, guid: 74405104af8b6e041bfc109438fa0d06, type: 2}
+  currentMoveSpeed: 0
+  currentHealth: 0
+  currentDamage: 0
+  despawnDistance: 8
+  damageColor: {r: 1, g: 0, b: 0, a: 1}
+  damageFlashDuration: 0.2
+  deathFadeTime: 0.6

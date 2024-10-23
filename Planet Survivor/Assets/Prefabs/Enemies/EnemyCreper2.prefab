@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 2238179353991621709}
   - component: {fileID: 6026487928308523298}
   - component: {fileID: 4026351147496377572}
-  - component: {fileID: 1013550096553430015}
   - component: {fileID: 1867047067359442154}
   - component: {fileID: -3115828901141678894}
   - component: {fileID: 4733701623048903355}
+  - component: {fileID: 1957111516620186935}
   m_Layer: 0
   m_Name: EnemyCreper2
   m_TagString: Enemy
@@ -103,27 +103,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
---- !u!114 &1013550096553430015
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7793597112702202381}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76a0d06bff9399240b91c217679a03d0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyData: {fileID: 11400000, guid: b0bd636439772814a8c056cf6a722f48, type: 2}
-  currentMoveSpeed: 0
-  currentHealth: 0
-  currentDamage: 0
-  despawnDistance: 10
-  damageColor: {r: 1, g: 1, b: 1, a: 1}
-  damageFlashDuration: 0.2
-  deathFadeTime: 0.6
-  damageEffect: {fileID: 0}
 --- !u!114 &1867047067359442154
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -208,6 +187,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+--- !u!114 &1957111516620186935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7793597112702202381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76a0d06bff9399240b91c217679a03d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyData: {fileID: 11400000, guid: b0bd636439772814a8c056cf6a722f48, type: 2}
+  currentMoveSpeed: 0
+  currentHealth: 0
+  currentDamage: 0
+  despawnDistance: 8
+  damageColor: {r: 1, g: 0, b: 0, a: 1}
+  damageFlashDuration: 0.2
+  deathFadeTime: 0.6
 --- !u!1 &8263231106674200280
 GameObject:
   m_ObjectHideFlags: 0
